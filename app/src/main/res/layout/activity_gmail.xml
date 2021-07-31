@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.GmailActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/loginbg" />
+
+        <!--
+        <TextView
+            android:id="@+id/txt_one_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="52dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center_horizontal"
+            android:text="One more"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_welcome" />
+
+        <TextView
+            android:id="@+id/txt_step_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center_horizontal"
+            android:text="step to go"
+            android:textAlignment="center"
+            android:textColor="@color/app_colour"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/txt_one_more"
+            app:layout_constraintTop_toTopOf="@+id/txt_one_more" />
+        -->
+
+
+        <TextView
+            android:id="@+id/txt_go_ahead_entering"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center_horizontal"
+            android:text="Login or Sign-Up by entering Your"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_welcome" />
+
+        <TextView
+            android:id="@+id/txt_enter_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center_horizontal"
+            android:text="Email id and Password"
+            android:textAlignment="center"
+            android:textColor="@color/app_colour"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/txt_go_ahead_entering"
+            app:layout_constraintHorizontal_bias="0.593"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_go_ahead_entering" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etl_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="32dp"
+            android:hint="Gmail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/txt_enter_mail"
+            app:layout_constraintTop_toBottomOf="@+id/txt_enter_mail"
+            app:startIconDrawable="@drawable/ic_mail">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_mail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etl_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:hint="Password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/etl_mail"
+            app:layout_constraintTop_toBottomOf="@+id/etl_mail"
+            app:passwordToggleEnabled="true"
+            app:startIconDrawable="@drawable/ic_pass">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_pass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_mail_proceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/btn_proceed"
+            android:text="Proceed"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etl_pass" />
+
+        <TextView
+            android:id="@+id/txt_new_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginBottom="32dp"
+            android:text="New User?"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_mail_proceed" />
+
+        <TextView
+            android:id="@+id/txt_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="96dp"
+            android:text="@string/txt_register"
+            android:textColor="@color/app_colour"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/txt_new_user"
+            app:layout_constraintTop_toBottomOf="@+id/btn_mail_proceed" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</layout>

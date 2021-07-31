@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "155739368775",
+    "project_id": "car-pooling-df6b6",
+    "storage_bucket": "car-pooling-df6b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155739368775:android:5fd0ca1a55400d14837062",
+        "android_client_info": {
+          "package_name": "com.josus.car"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155739368775-0j3q5a1udg4oeao5pg90fbd4h0h0od7l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXI4NcLxF3sni-SU28QmQ70NTHwnYA2ZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155739368775-0j3q5a1udg4oeao5pg90fbd4h0h0od7l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

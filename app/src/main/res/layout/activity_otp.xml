@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.OtpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <view
+            android:id="@+id/view"
+            class="android.widget.ImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/loginbg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtOtpCon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/txt_otp_confirm"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/txtPhoneEnteredNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtOtpCon1" />
+
+        <TextView
+            android:id="@+id/txtOtpCon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center_horizontal"
+            android:singleLine="false"
+            android:text="@string/txt_otp_confirm1"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/txtChangeMob"
+            app:layout_constraintHorizontal_bias="0.28"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPhoneEnteredNumber" />
+
+        <TextView
+            android:id="@+id/txtChangeMob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/txt_change_mob"
+            android:textColor="@color/app_colour"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtOtpCon2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtOtpCon2" />
+
+        <LinearLayout
+            android:id="@+id/ll_et_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtOtpCon2">
+
+            <EditText
+                android:id="@+id/etOtpNum1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/etotpnumbg"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/app_colour"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/etOtpNum2"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/etotpnumbg"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/app_colour"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/etOtpNum3"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/etotpnumbg"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/app_colour"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/etOtpNum4"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/etotpnumbg"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/app_colour"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/etOtpNum5"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/etotpnumbg"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/app_colour"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/etOtpNum6"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/etotpnumbg"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/app_colour"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtOtpQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="34dp"
+            android:text="@string/txt_otp_q"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_et_otp" />
+
+        <TextView
+            android:id="@+id/txt_resend_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/txt_resend_otp"
+            android:textColor="@color/app_colour"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/txtOtpQuestion"
+            app:layout_constraintStart_toEndOf="@+id/txtOtpQuestion"
+            app:layout_constraintTop_toBottomOf="@+id/ll_et_otp" />
+
+        <Button
+            android:id="@+id/btnProceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/btn_proceed"
+            android:enabled="false"
+            android:text="@string/btn_proceed"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtOtpQuestion"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/txt_error_msgs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnProceed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtOtpQuestion" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</layout>
